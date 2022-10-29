@@ -19,7 +19,8 @@ public class ConcourApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if(false){
+
+        if(true){
             User admin = new User("admin","admin");
             admin.setAuthorities(Arrays.asList(new Role("ROLE_ADMIN")));
             userService.save(admin);

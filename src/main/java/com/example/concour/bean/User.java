@@ -28,15 +28,15 @@ public class User implements UserDetails {
     private Collection<Role> authorities;
 
     public User(String password, String username) {
-        password = password;
-        username = username;
+        this.password = password;
+        this.username = username;
     }
 
     public User() {
     }
 
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id) {
@@ -45,24 +45,24 @@ public class User implements UserDetails {
 
     @Override
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
-        password = password;
+        this.password = password;
     }
 
     @Override
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     public void setUsername(String username) {
-        username = username;
+        this.username = username;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -70,7 +70,7 @@ public class User implements UserDetails {
     }
 
     public String getPhoneNumber() {
-        return phoneNumber;
+        return this.phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
@@ -79,43 +79,43 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return isAccountNonExpired;
+        return this.isAccountNonExpired;
     }
 
     public void setAccountNonExpired(boolean accountNonExpired) {
-        isAccountNonExpired = accountNonExpired;
+        this.isAccountNonExpired = accountNonExpired;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return isAccountNonLocked;
+        return this.isAccountNonLocked;
     }
 
     public void setAccountNonLocked(boolean accountNonLocked) {
-        isAccountNonLocked = accountNonLocked;
+        this.isAccountNonLocked = accountNonLocked;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return isCredentialsNonExpired;
+        return this.isCredentialsNonExpired;
     }
 
     public void setCredentialsNonExpired(boolean credentialsNonExpired) {
-        isCredentialsNonExpired = credentialsNonExpired;
+        this.isCredentialsNonExpired = credentialsNonExpired;
     }
 
     @Override
     public boolean isEnabled() {
-        return isEnabled;
+        return this.isEnabled;
     }
 
     public void setEnabled(boolean enabled) {
-        isEnabled = enabled;
+        this.isEnabled = enabled;
     }
 
     @Override
     public Collection<Role> getAuthorities() {
-        return authorities;
+        return this.authorities;
     }
 
     public void setAuthorities(Collection<Role> authorities) {
